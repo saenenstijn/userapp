@@ -1,0 +1,13 @@
+<div *ngIf="user">
+  <h2>Details from {{user.userid}}</h2>
+  <div><span>ID: </span> {{user.userid}} </div>
+  <div><span>Firstname: </span> {{user.firstName}} </div>
+  <div><span>Lastname: </span> {{user.lastname}} </div>
+  <div><span>Status: </span> {{user.status}} </div>
+
+  <div>
+    <label>status:</label>
+    <input [(ngModel)]="user.status" placeholder="status"/>
+    <button (click)="setStatus()">submit</button>
+  </div>
+</div>
